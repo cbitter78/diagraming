@@ -77,7 +77,7 @@ Total Score: Hard NO!
 - License:  Very Good:  Open Source
 - OS agnostic: Very Good: Runs on everything.  You can download it [here](https://github.com/jgraph/drawio-desktop/releases).  You can use it in a browser but then the diagrams are not next to the code.
 - VSCode Plugin: Very Good: You can get it [here](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
-- Code Review: Poor: Draw.io files are text, but they are complex text
+- Code Review: OK: Draw.io files are text, but they are complex text.  With CICD like actions the PR includes a graphic file that can easily be inspected as a graphic.   This is an [example](https://github.com/cbitter78/diagraming/pull/1)
 - Rendered: Poor: You can create a CICD action to export diagrams as .png, .svg, .pdf, .whatever.  That is set up in this repo and works.  You can check out the actions file in [.github/workflows/draw.io.yml](.github/workflows/draw.io.yml).  This comes with a cost.  You have to explain how it works which I did.  You can read about it in the [drawio folder](./drawio/).  This repo is open source, you can use this work in your project without restriction.
 - Supports C4: Good  There is a C4 template set out of the box.  Its quite easy to use.
 
