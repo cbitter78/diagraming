@@ -1,0 +1,55 @@
+# Workflow to process any drawio file in the ./drawio folder.
+# They will be placed in the ./drawio/export folder named after
+# the input file then `-` page name `.svg`
+# This workflow operates on all branches intentionally.
+# See: https://github.com/marketplace/actions/draw-io-export-action
+
+name: Keep draw.io export synchronized
+on:
+  push:
+    paths:
+      - "**.drawio"
+      - .github/workflows/draw.io.yml
+concurrency:
+  group: drawio-export-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  drawio-export:
+    runs-on: ubuntu-latest
+
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+      
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Export drawio files to asciidoctor and svg files
+        uses: rlespinasse/drawio-export-action@v2
+        with:
+          format: svg
+          path: ./drawio
+
+      - name: Export drawio files to asciidoctor and png files
+        uses: rlespinasse/drawio-export-action@v2
+        with:
+          format: png
+          transparent: false
+          path: ./drawio
+
+      - name: Get author and committer info from HEAD commit
+        uses: rlespinasse/git-commit-data-action@v1
+
+
+      - name: Commit changed files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "docs: sync draw.io exported files"
+          commit_user_name: "${{ env.GIT_COMMIT_COMMITTER_NAME }}"
+          commit_user_email: "${{ env.GIT_COMMIT_COMMITTER_EMAIL }}"
+          commit_author: "${{ env.GIT_COMMIT_AUTHOR }}"
