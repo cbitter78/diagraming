@@ -43,7 +43,6 @@ flowchart TD
 And this flow shows Left to Right
 
 ```mermaid
-
 graph LR
     A[Square Rect] -- Link text --> B((Circle))
     A --> C(Round Rect)

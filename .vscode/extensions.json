@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "davidanson.vscode-markdownlint",
+    "gera2ld.markmap-vscode",
+    "trunk.io",
+    "hediet.vscode-drawio"
+  ]
+}
