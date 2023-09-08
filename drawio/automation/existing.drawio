@@ -1,0 +1,30 @@
+<mxfile host="65bd71144e">
+    <diagram id="TINdIjQub0dSZbnbTmQA" name="Page-1">
+        <mxGraphModel dx="808" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <object label="Name: %name%&lt;br&gt;Location: %location%&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Hobby: %hobby%&lt;/span&gt;&lt;/div&gt;" name="Joe" location="Taxes" hobby="Boating" extra="Cars" placeholders="1" node_id="2" pet="Cat" id="2">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=5;" parent="1" vertex="1">
+                        <mxGeometry x="40" y="40" width="320" height="90" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="Name: %name%&lt;br&gt;Location: %location%&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Hobby: %hobby%&lt;/span&gt;&lt;/div&gt;" name="Justin" location="Arizona" hobby="Hiking" extra="Biking" placeholders="1" node_id="3" pet="Dog" id="3">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=5;" parent="1" vertex="1">
+                        <mxGeometry x="40" y="160" width="320" height="90" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="Name: %name%&lt;br&gt;Location: %location%&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Hobby: %hobby%&lt;/span&gt;&lt;/div&gt;" name="Susan" location="Alaska" hobby="Hunting" extra="Fishing" placeholders="1" node_id="4" pet="Goat" id="4">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=5;" parent="1" vertex="1">
+                        <mxGeometry x="40" y="280" width="320" height="90" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;span style=&quot;text-align: left;&quot;&gt;Name: %name%&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Location: %location%&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;Hobby: %hobby%&lt;/span&gt;&lt;/div&gt;" placeholders="1" node_id="5" name="Sam" location="NewYork" hobby="Driving" extra="Eating" pet="GoldFish" id="5">
+                    <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                        <mxGeometry x="430" y="40" width="120" height="80" as="geometry"/>
+                    </mxCell>
+                </object>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

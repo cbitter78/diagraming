@@ -1,6 +1,6 @@
 # Draw.io Assets
 
-Draw.io is an open source digraming program that works on Mac, Windows, Linux, Web, and just about anything else.  It is very good ad making diagrams you can control.  Its solves licensing issues caused when diagrams are written in on the OmniGravel or Vizio.
+Draw.io is an open source diagraming program that works on Mac, Windows, Linux, Web, and just about anything else.  It is very good ad making diagrams you can control.  Its solves licensing issues caused when diagrams are written in on the OmniGravel or Vizio.
 
 To work with these files, you will want this VSCode [plugin](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio).
 
@@ -12,6 +12,9 @@ To fix this I use the Atlas style for draw.io.  You can use the [.vscode/setting
 To include it in markdown just use a standard image tag.  This is an example.
 
 ![The example diagram as svg](./examplesvg.drawio.svg)
+## Example
+
+![steve](./steve.drawio.svg)
 
 This works for github pages as well but because of path translations you need to keep the drawio file in the same folder as the markdown.
 

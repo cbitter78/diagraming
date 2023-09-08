@@ -1,0 +1,3 @@
+csv
+N2G # https://n2g.readthedocs.io/en/latest/diagram_plugins/DrawIo%20Module.html
+python-igraph
