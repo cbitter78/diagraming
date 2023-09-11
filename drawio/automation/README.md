@@ -10,4 +10,4 @@ These are stand-alone scripts, so I do repeat code.  This is intentional.
 
 ## Create
 
-[create.py](./create.py) will read data in [data.csv](./data.csv) and then and then create a new file from it.  That file is named created.drawio.svg
+[create.py](./create.py) will read data in [data.csv](./data.csv) and then create a new file from it.  That file is named created.drawio.svg
