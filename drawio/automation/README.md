@@ -1,6 +1,6 @@
 # Draw.io Automation
 
-Sometimes you want to update or create a diagram from data.  You can do this with draw.io.   There are a few quarks but overall it works fine.  You can check out the examples in this folder. I really like how you can arrange and tweak draw.io files.  I think my work flow will be to use create to start then update as needed.
+Sometimes you want to update or create a diagram from data. You can do this with draw.io. There are a few quirks but overall it works fine.  You can check out the examples in this folder. I really like how you can arrange and tweak draw.io files.  I think my workflow will be to use `create.py` to start then `update_existing.py` as needed.
 
 These are stand alone scripts so I do repeat code.  This is intentional.
 
