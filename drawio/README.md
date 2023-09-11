@@ -12,10 +12,7 @@ To fix this I use the Atlas style for draw.io.  You can use the [.vscode/setting
 To include it in markdown just use a standard image tag.  This is an example.
 
 ![The example diagram as svg](./examplesvg.drawio.svg)
-## Example
-
-![steve](./steve.drawio.svg)
 
 This works for github pages as well but because of path translations you need to keep the drawio file in the same folder as the markdown.
 
-TODO: Figure out github pages and how I can apply [this](https://github.com/jgraph/drawio-github) style so that I dont have to play with dark mode.
+TODO: Figure out github pages and how I can apply [this](https://github.com/jgraph/drawio-github) style so that I don't have to play with dark mode.

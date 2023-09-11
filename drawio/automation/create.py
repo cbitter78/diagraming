@@ -2,13 +2,15 @@
 
 import csv
 from N2G import drawio_diagram
-
-# Escaped HTML with inline style for formatting that is used for the label
-NODE_LABEL="Name:&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;%name%&lt;br&gt;Location:&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;%location%&lt;br&gt;Hobby:&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;%hobby%"
+from html import escape
 
 # The metaEdit=1 sets the edit data dialog box as the default action when you click on the node in draw.io
 NODE_STYLE='rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=5;metaEdit=1;'
-
+NODE_LABEL = '''
+Name:    &emsp; %name%<br>
+Location:&emsp; %location%<br>
+Hobby:   &emsp; %hobby%
+'''
 
 def read_csv_file(filename):
     rows = []
@@ -16,7 +18,6 @@ def read_csv_file(filename):
         for row in csv.DictReader(csv_file):
             rows.append(row)
         return rows
-
 
 if __name__ == "__main__":
     g = {
@@ -26,7 +27,7 @@ if __name__ == "__main__":
 
     rows = read_csv_file("data.csv")
     for r in rows:
-        g['nodes'].append({'id': r['node_id'], 'data':r, 'label': NODE_LABEL, 'style': NODE_STYLE, 'placeholders': "1" })
+        g['nodes'].append({'id': r['node_id'], 'data':r, 'label': escape(NODE_LABEL), 'style': NODE_STYLE, 'placeholders': "1" })
 
     diagram = drawio_diagram()
     diagram.from_dict(g, width=300, height=200, diagram_name="data.csv")
