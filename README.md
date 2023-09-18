@@ -6,11 +6,12 @@ Diagrams are a way to make ideas tangible.  When creating software and systems u
 
 A word of caution, diagrams are not the only way.  We should not relay on just a picture.  A single picture to explain a complex process tends to have lower levels of success unless you are IKEA. :)
 
+
 ## Rot
 
-## Architecture
+## Architecture 
 
-Is an Architecture Diagram or a collection of Diagrams.  I would say no.  I think an Architecture would use diagrams to communicate the architecture.  To do this effectively I have found that one set of diagrams is insufficient.
+Is an Architecture Diagram or a collection of Diagrams.  I would say no.  I think an architecture would use diagrams to communicate the architecture.  To do this effectively I have found that one set of diagrams is insufficient.
 
 I find that a global view of the system Context is helpful to see where the major Containers and how they relate to each other. Then I want to “zoom in” to each container to see the components and their relationship that make it up. Finally, I want to “zoom in” again to see what the makes up the components. In most cases this is Code.
 
@@ -40,12 +41,13 @@ Do continue to read how I landed on this tool combo.
 
 For me a diagram tool should:
 
+
 - Not require a license to be installed on my computer.  This stops open source and is you work in a big company you must wait to buy software, install it, pay for it every year.  For me this is a deal breaker.  I will not use any diagraming tool that requires a license.  It’s not kind to others when they can’t open the file.
 - Be Operating System agnostic.  It should work on Mac, Linux, Windows, (extra points for mobile operating systems)
 - Be visualized directly in VSCode.  This is a list of what I value, I use VSCode and therefore I value VSCode plugins.
 - Defined in a way that can be easily code reviewed.  If the diagram is text, then it lends itself to a code review.  However, if it is complex text then you did not do yourself any favors.
-- Rendered into your documentation for you.   If your diagrams show up in your markdown files as nice graphics with little effort all the better.  If they plug into other rendering engines like, make docs then you are winning! If you have to build a CICD pipeline for them you may want to consider the cost of explaining how it works to new contributors vs the benefit.
-- Supports C4: I think the C4 philosophy is worth wile and want to use it in my diagrams.
+- Rendered into your documentation for you.   If your diagrams show up in your markdown files as nice graphics with little effort all the better.  If they plug into other rendering engines like, make docs then you are winning! If you have to build a CICD pipeline for them, you may want to consider the cost of explaining how it works to new contributors vs the benefit.
+- Supports C4: I think the C4 philosophy is worth while and I want to use it in my diagrams.
 
 I have scored each tool I have used in the past here.   These are my own opinions.  My scoring is on a scale of Very Good, Good, Maybe, Meh, Ok, Poor, Very Poor and Hard NO!
 
@@ -98,9 +100,10 @@ Total Score: Maybe
 
 - License:  Very Good:  Open Source
 - OS agnostic: Very Good: Runs on everything. (Not model)
-- VSCode Plugin: Very Good:  There are many.  I used this [one](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) that plugs right into the markdown preview
+- VSCode Plugin: Very Good:  There are many.  I used this [one](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) that plugs right into the markdown preview.
+- Code Review: **ToDo** @cbitter78
 - Rendered: Very Good: [Mermaid](https://mermaid.js.org/intro/) graphs in the Markdown are automatically rendered into embedded diagrams in markdown files by the github enterprise [GitHub’s HTML pipeline](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/).  This means that embed Mermaid diagrams in a .md file will be converted into a graph when pushed to github.
-- Supports C4: Good: Supported via [mermaid - c4](https://mermaid.js.org/syntax/c4c.html).  However, if there is c4 DSL issue finding the error is very hard.  Sense this is the same with Structurizr I would not say its mermaid fault.  Just know its a thing.
+- Supports C4: Good: Supported via [mermaid - c4](https://mermaid.js.org/syntax/c4c.html).  However, if there is c4 DSL issue, finding the error is very hard.  Sinse this is the same with Structurizr, I would not say it's mermaid fault.  Just know it's a thing.
 
 Total Score: Very Good
 
