@@ -1,0 +1,2 @@
+N2G==0.3.3 # https://n2g.readthedocs.io/en/latest/diagram_plugins/DrawIo%20Module.html
+python-igraph==0.10.6
